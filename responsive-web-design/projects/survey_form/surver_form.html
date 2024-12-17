@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Customer Feedback Survey</h1>
+        <p id="description">We value your feedback. Please fill out the survey below.</p>
+        <form id="survey-form">
+            <!-- Name Field -->
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <!-- Email Field -->
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <!-- Number Field -->
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" placeholder="Enter your age" min="1" max="120" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">What is your favorite feature?</label>
+            <select id="dropdown">
+                <option value="UI">User Interface</option>
+                <option value="UX">User Experience</option>
+                <option value="Support">Customer Support</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset class="radio-group">
+                <legend>How did you hear about us?</legend>
+                <label><input type="radio" name="source" value="friends" required> Friends</label>
+                <label><input type="radio" name="source" value="ads"> Advertisements</label>
+                <label><input type="radio" name="source" value="social"> Social Media</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset class="checkbox-group">
+                <legend>What do you like about our service? (Select all that apply)</legend>
+                <label><input type="checkbox" value="reliability"> Reliability</label>
+                <label><input type="checkbox" value="speed"> Speed</label>
+                <label><input type="checkbox" value="quality"> Quality</label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" rows="4" placeholder="Write your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
