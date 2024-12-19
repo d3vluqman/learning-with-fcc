@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <img src="https://via.placeholder.com/150" alt="Logo" id="header-img">
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#video-section" class="nav-link">Video</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="features">
+            <h2>Our Features</h2>
+            <div class="flex-container">
+                <div class="flex-item">Feature 1 Description</div>
+                <div class="flex-item">Feature 2 Description</div>
+                <div class="flex-item">Feature 3 Description</div>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Product Video</h2>
+            <video id="video" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
